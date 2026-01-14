@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Impressum – WhatNextApp</title>
+    <meta name="robots" content="noindex" />
+    <style>
+        :root { color-scheme: light dark; }
+        body { font-family: -apple-system, system-ui, Segoe UI, Roboto, Arial, sans-serif; margin: 0; padding: 24px; line-height: 1.55; }
+        main { max-width: 860px; margin: 0 auto; }
+        .card { border: 1px solid rgba(127,127,127,.25); border-radius: 14px; padding: 18px; margin: 14px 0; }
+        code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+        a { text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        h1 { margin: 0 0 6px; }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Impressum</h1>
+    <p class="muted">Angaben gemäß § 5 TMG / § 18 Abs. 2 MStV (je nach Angebot).</p>
+
+    <div class="card">
+        <h2>Anbieter</h2>
+        <p>
+            <strong>Mathias Drabinski</strong><br />
+            Claudiusstraße 23<br />
+            51503 Rösrath<br />
+            Deutschland
+        </p>
+
+        <h3>Kontakt</h3>
+        <p>
+            E-Mail: <a href="mailto:whatnextapp@drabinski.eu">whatnextapp@drabinski.eu</a><br />
+            Telefon: +49 2205 9082702 <span class="muted">(optional, aber häufig sinnvoll)</span>
+        </p>
+
+        <h3>Umsatzsteuer</h3>
+        <p>
+            Umsatzsteuer-Identifikationsnummer gemäß § 27 a UStG:<br /> <strong>DE316516031</strong><br />
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Haftung</h2>
+        <h3>Haftung für Inhalte</h3>
+        <p>
+            Als Diensteanbieter bin ich gemäß den allgemeinen Gesetzen für eigene Inhalte auf diesen Seiten verantwortlich.
+            Ich übernehme jedoch keine Gewähr für die Aktualität, Vollständigkeit und Richtigkeit bereitgestellter Inhalte.
+        </p>
+
+        <h3>Haftung für Links</h3>
+        <p>
+            Diese Seiten können Links zu externen Websites Dritter enthalten. Auf deren Inhalte habe ich keinen Einfluss.
+            Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.
+        </p>
+
+        <h3>Urheberrecht</h3>
+        <p>
+            Inhalte und Werke auf diesen Seiten unterliegen dem Urheberrecht. Jede Art der Verwertung außerhalb der Grenzen
+            des Urheberrechts bedarf der vorherigen schriftlichen Zustimmung.
+        </p>
+    </div>
+
+    <p class="muted">
+        Stand: <span id="date"></span>
+    </p>
+</main>
+
+<script>
+    // Nur zur Anzeige des Datums; kann entfernt werden.
+    const d = new Date();
+    const pad = (n) => String(n).padStart(2, "0");
+    document.getElementById("date").textContent = `${pad(d.getDate())}.${pad(d.getMonth()+1)}.${d.getFullYear()}`;
+</script>
+</body>
+</html>

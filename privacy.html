@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Datenschutzerklärung – WhatNextApp</title>
+    <meta name="robots" content="noindex" />
+    <style>
+        :root { color-scheme: light dark; }
+        body {
+            font-family: -apple-system, system-ui, Segoe UI, Roboto, Arial, sans-serif;
+            margin: 0;
+            padding: 24px;
+            line-height: 1.6;
+        }
+        main { max-width: 860px; margin: 0 auto; }
+        .card {
+            border: 1px solid rgba(127,127,127,.25);
+            border-radius: 14px;
+            padding: 18px;
+            margin: 14px 0;
+        }
+        .muted { opacity: .75; }
+        ul { padding-left: 18px; }
+        a { text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        h1 { margin: 0 0 6px; }
+        h2 { margin-top: 0; }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Datenschutzerklärung (Privacy Policy)</h1>
+
+    <div class="card">
+        <h2>1. Verantwortlicher</h2>
+        <p>
+            Verantwortlich für die Datenverarbeitung:<br /><br />
+            <strong>Mathias Drabinski</strong><br />
+            Claudiusstraße 23<br />
+            51503 Rösrath<br />
+            Deutschland<br /><br />
+            E-Mail: <a href="mailto:whatnextapp@drabinski.eu">whatnextapp@drabinski.eu</a>
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>2. Grundsatz</h2>
+        <p>
+            WhatNextApp ist so konzipiert, dass möglichst wenige personenbezogene Daten verarbeitet werden.
+            Es gibt kein klassisches Benutzerkonto und kein Nutzer-Tracking.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>3. Inhalte in der App</h2>
+        <p>
+            Inhalte, die du in der App eingibst (z. B. Fokusbereiche oder Aufgaben),
+            dienen ausschließlich der App-Funktion und werden nicht öffentlich gemacht.
+            Eine serverseitige Speicherung dieser Inhalte ist nicht vorgesehen.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>4. Firebase Authentication (anonymer Login)</h2>
+        <p>
+            Die App nutzt Firebase Authentication für einen <strong>anonymen Login</strong>.
+            Dabei wird eine technische Kennung erzeugt, um die App stabil und sicher betreiben zu können.
+            Es werden keine Klarnamen oder Kontaktinformationen abgefragt.
+        </p>
+        <p>
+            Anbieter: Google Ireland Limited (Firebase)
+        </p>
+        <p>
+            Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) und
+            Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren Betrieb der App)
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>5. In-App-Käufe & Abonnements</h2>
+        <p>
+            Abonnements werden über den Apple App Store abgewickelt.
+            Apple verarbeitet dabei als eigener Verantwortlicher Zahlungs- und Transaktionsdaten.
+            Ich erhalte keine Zahlungsdaten, sondern lediglich Informationen zum Abo-Status,
+            soweit dies für die Freischaltung der App-Funktionen erforderlich ist.
+        </p>
+        <p>
+            Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>6. Analytics & Werbung</h2>
+        <ul>
+            <li>Keine Nutzungsanalyse (kein Tracking)</li>
+            <li>Keine Werbung</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>7. Crashreporting</h2>
+        <p>
+            Derzeit wird kein Crashreporting eingesetzt.
+            Bei einer späteren Aktivierung wird diese Datenschutzerklärung entsprechend aktualisiert.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>8. Rechte der Nutzer</h2>
+        <p>
+            Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
+            Datenübertragbarkeit sowie das Recht auf Beschwerde bei einer Datenschutzaufsichtsbehörde,
+            soweit personenbezogene Daten verarbeitet werden.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>9. Kontakt</h2>
+        <p>
+            Bei Fragen zum Datenschutz:<br />
+            E-Mail: <a href="mailto:whatnextapp@drabinski.eu">whatnextapp@drabinski.eu</a>
+        </p>
+    </div>
+
+    <p class="muted">
+        Stand: <span id="date"></span>
+    </p>
+</main>
+
+<script>
+    const d = new Date();
+    const pad = (n) => String(n).padStart(2, "0");
+    document.getElementById("date").textContent =
+        `${pad(d.getDate())}.${pad(d.getMonth()+1)}.${d.getFullYear()}`;
+</script>
+</body>
+</html>
